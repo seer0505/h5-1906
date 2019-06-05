@@ -1,0 +1,761 @@
+@charset "utf-8";
+body{
+    height: 3000px;
+}
+/* head */
+.head{
+    height: 80px;
+    background: #222;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+.head ul li{
+    float: left;
+}
+.head h1 img{
+    height: 80px;
+    width: 80px;
+}
+.head .list1{
+    position: absolute;
+    top: 0;
+    left: 80px;
+}
+.head .list1 li a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    padding: 0 20px;
+    background: #222;
+    color: #fff;
+}
+.head .list1 li:first-child a{
+    background: #fff;
+    color: #585858;
+}
+.head .list1 li:hover{
+    opacity: 0.8;
+}
+.head .list1 li:nth-child(1):hover{
+    opacity: 1;
+}
+.head .list1 li:nth-child(3) a span:nth-child(1){
+    color: #c62420
+}
+.head .list2{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.head .list2 li a{
+    display: inline-block;
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    background: #222;
+    color: #c7c7c7;
+    text-align: center;
+}
+.head .list2 li:nth-child(1) a{
+    margin: 0 40px;
+}
+.head .list2 li:nth-child(2) a{
+    margin: 0 7px;
+}
+.head .list2 li:nth-child(2) a:hover{
+    color: skyblue;
+}
+.head .list2 li:nth-child(3) a{
+    padding: 0 20px;
+}
+.head .list2 li:nth-child(3) a:hover{
+    background: #fff;
+}
+.head .list2 li:nth-child(4) a{
+    padding: 0 12px;
+}
+.head .list2 li:nth-child(4) a:hover{
+    background: #fff;
+}
+.head .list2 li:nth-child(4) a img{
+    display: inline-block;
+    margin-right: 8px;
+}
+.head .list2 li:nth-child(5) a{
+    background: #efefef;
+    padding: 0 35px;
+}
+.head .list2 .phoneshop{
+    height: 170px;
+    width: 170px;
+    position: absolute;
+    top: 40px;
+    right: 115px;
+    background: #fff;
+    display: none;
+    z-index: 2;
+}
+.head .list2 .phoneshop img{
+    height: 150px;
+    width: 150px;
+    margin-left: 10px;
+}
+.head .list2 .phoneshop p{
+    width: 170px;
+    text-align: center;
+    font-size: 12px;
+}
+.head .list2 .chooseCountry{
+    padding: 10px 0;
+    height: 50px;
+    width: 150px;
+    background: #fff;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    display: none;
+    z-index: 2;
+}
+.head .list2 .chooseCountry a{
+    display: block;
+    font-size: 14px;
+    color: #ccc;
+    text-align: center;
+}
+.head .list2 li:nth-child(5) .shopcar{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    height: 580px;
+    width: 300px;
+    background: #efefef;
+    display: none;
+    z-index: 2;
+}
+.head .list2 li:nth-child(5) .shopcar span{
+    display: block;
+    height: 14px;
+    width: 14px;
+    border: 1px solid #000;
+    position: absolute;
+    top: 2px;
+    right: 5px;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+}
+.head .list2 li:nth-child(5) .shopcar p{
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.head .list2 li:nth-child(5) .shopcar button{
+    width: 200px;
+    height: 40px;
+    background: red;
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    border: 0;
+    position: absolute;
+    top: 100px;
+    left: 20px;
+}
+
+.head .list3Box{
+    min-height: 40px;
+}
+
+.head .list3{
+    position: absolute;
+    height: 40px;
+    top: 40px;
+    left: 80px;
+    background: #fff
+}
+.head .list3 li{
+    padding: 10px 25px;
+    text-align: center;
+}
+.head .list3 li a{
+    font-size: 16px;
+    color: #000;
+    line-height: 16px;
+}
+.head .list3 .liActive{
+    background: #efefef;
+}
+/* .head .navBox{
+    height: 
+} */
+.head .list3 li div{
+    position: absolute;
+    left: -80px;
+    top: 40px;
+    height: 330px;
+    width: 1423px;
+    background: #efefef;
+    display: none;
+    padding-left: 130px;
+}
+.head .list3 li .divActive{
+    display: block;
+}
+.head .list3 div ul{
+    float: left;
+    width: 135px;
+    margin-top: 20px;
+    margin-right: 30px;
+    height: 280px;
+    border-right: 1px solid #ccc;
+}
+.head .list3 div ul:last-child{
+    border: 0;
+}
+.head .list3 div ul li{
+    float: none;
+}
+.head .list3 div ul li a{
+    display: block;
+    font-size: 12px;
+    height: 5px;
+    line-height: 12px;
+    text-align: left;
+}
+.head .list3 div ul li:nth-child(1) a{
+    font-size: 16px;
+    font-weight: 700;
+    height: 10px;
+}
+.head .list3 li:nth-child(7) div ul{
+    width: 230px;
+}
+.head .searchBox{
+    position: absolute;
+    top: 40px;
+    right: 0;
+    height: 40px;
+    width: 623px;
+    background: #fff;
+}
+.head .searchBox input{
+    width: 428px;
+    height: 30px;
+    position: absolute;
+    right: 12px;
+    top: 5px;
+    padding: 10px 40px;;
+    background: #e2e2e2;
+}
+.head .searchBox span{
+    display: block;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 9px;
+    left: 195px;
+    cursor: pointer;
+}
+
+
+/* fixedBox */
+.fixedBox{
+    position: fixed;
+    right: 0;
+    top: 324px;
+    z-index: 3;
+}
+.fixedBox ul li{
+    width: 60px;
+    height: 60px;
+    background: #000;
+    padding: 8px;
+    margin-bottom: 1px;
+    cursor: pointer;
+}
+.fixedBox ul li img{
+    width: 44px;
+    height: 44px;
+}
+/* banner */
+.notice{
+    height: 32px;
+    width: 100%;
+    background: #efefef;
+    position: relative;
+}
+.notice .swiper-container{
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 100px;
+}
+.notice .swiper-container a{
+    color: #5d5d5d;
+    font-size: 12px;
+}
+.notice .swiper-container .icon-tongzhi{
+    font-size: 18px!important;
+}
+/* .box{
+    height: 450px;
+    width: 100%;
+    background: pink;
+    position: relative;
+}
+.box span{
+    display: block;
+    height: 80px;
+    width: 40px;
+    line-height: 80px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    opacity: 0.8;
+    position: absolute;
+    top:220px;
+    cursor: pointer;
+}
+.box span:nth-of-type(1){
+    left: 90px;
+}
+.box span:nth-of-type(2){
+    right: 90px;
+}
+.box .imgBox{
+    height: 450px;
+    position: absolute;
+}
+.box .imgBox img{
+    height: 450px;
+    width: 1423px;
+    display: block;
+    float: left;
+} */
+.layui-carousel{
+    height:450px!important;
+}
+.box div img{
+    height: 450px;
+    width: 1423px;
+}
+
+
+/* showBox */
+.showBox{
+    height: 870px;
+    width: 100%;
+    position: relative;
+}
+.showBox .showTop{
+    position: absolute;
+    top: 16px;
+    margin-left: 260px;
+}
+.showBox .showTop li {
+    position: relative;
+    float: left;
+    margin-right: 10px;
+}
+.showBox .showTop li div{
+    background: black;
+    opacity: 0.6;
+    position: absolute;
+    top: 0;left: 0;
+    width: 220px;
+    height: 120px;
+    display: none;
+}
+.showBox .showTop li div p{
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+}
+.showBox .showTop li div p:nth-child(2){
+    font-size: 14px;
+}
+.showBox .showTop li img{
+    display: block;
+    width: 220px;
+    height: 120px;
+}
+
+.showBox .showMiddle{
+    position: absolute;
+    top: 170px;
+}
+.showBox .showMiddle li img{
+    width: 1127px;
+    height: 356px;
+    margin-left: 140px;
+}
+
+.showBox .showBottom{
+    position: absolute;
+    top:545px;
+    margin-left: 140px;
+}
+.showBox .showBottom li {
+    float: left;
+    margin-right: 15px;
+}
+.showBox .showBottom li img{
+    height: 296px;
+    width: 562px;
+}
+
+/* page */
+.pageBox{
+    height: 580px;
+    width:100%;
+    position: relative;
+}
+.pageBox div span{
+    height: 28px;
+    width: 80px;
+    font-size:16px;
+    line-height: 28px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.pageBox .manChoose{
+    position: absolute;
+    left: 582px;
+    top: 0;
+}
+.pageBox .womanChoose{
+    position: absolute;
+    left: 766px;;
+    top: 0;
+}
+
+.pageBox .choose{
+    border-bottom: 2px solid #000;
+}
+
+.pageBox .page{
+    width: 1130px;
+    height: 528px;
+    position: absolute;
+    left: 147px;
+    top: 52px;
+}
+.pageBox .page li{
+    float: left;
+    margin-right: 11px;
+    position: relative;
+}
+.pageBox .page li:last-child{
+    margin-right: 0;
+}
+.pageBox .page li img{
+    width: 274px;
+    height: 528px;
+}
+.pageBox .page li div{
+    width: 274px;
+    height: 528px;
+    position: absolute;
+    background: #333;
+    opacity: 0.7;
+    left: 0;
+    top: 0;
+    display: none;
+}
+.pageBox .page li div span{
+    display: block;
+    width: 100px;
+    height: 40px;
+    background: #fff;
+    text-align: center;
+    line-height: 40px;
+    position: absolute;
+    left: 0;top: 0;right: 0;bottom: 0;
+    margin: auto;
+    opacity: 1;
+
+}
+
+
+/* case */
+.caseBox{
+    height: 646px;
+    width: 100%;
+
+    position: relative;
+}
+.case{
+    width: 1140px;
+    height: 600px;
+    position: absolute;
+    top: 46px;
+    left: 142px;
+}
+.caseBox .box{
+    width: 1140px;
+    height: 600px;
+
+    margin: 0 auto;
+    position: absolute;
+    top: 46px;
+    left: 142px;
+    overflow: hidden;
+}
+.caseBox span{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 3px solid #d6d6d6;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #d6d6d6;
+    position: absolute;
+    top:280px;
+    cursor: pointer;
+}
+.caseBox span:nth-of-type(1){
+    left: 84px;
+}
+.caseBox span:nth-of-type(2){
+    right: 84px;
+}
+.caseBox .imgBox{
+    height: 400px;
+    position: absolute;
+}
+.caseBox .imgBox img{
+    width: 1140px;
+    height: 600px;
+    display: block;
+    float: left;
+}
+.caseBox .btnBox{
+    height: 40px;
+    position: absolute;
+    bottom: 20px;
+
+}
+.caseBox.btnBox div{
+    float: left;
+    height: 20px;
+    width: 20px;
+    border-radius: 10px;
+    background: #fff;
+    margin: 0 5px;
+}
+.caseBox .btnBox .active {
+    background: red;
+}
+
+
+
+
+
+
+/* goods */
+.goodsBox{
+    height: 432px;
+    padding-top: 50px;
+    position: relative;
+}
+.goodsBox h2{
+    font-size: 20px;
+    text-align: center;
+    font-weight: 700;
+}
+.goodsBox section{
+    width: 1140px;
+    height: 350px;
+    margin:32px 0 0 143px;
+    overflow: hidden;
+    position: relative;
+}
+.goodsBox ul{
+    height: 350px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.goodsBox ul li{
+    float: left;
+    height: 350px;
+    width: 270px;
+    margin-right: 20px;
+    border: 1px solid #ccc;
+    position: relative;
+}
+.goodsBox ul li:nth-child(4n){
+    margin: 0;
+}
+.goodsBox ul li img{
+    margin: 15px;
+    height: 240px;
+    width: 240px;
+}
+.goodsBox ul li h2{
+    font-size: 12px;
+    text-align: center;
+    margin:0 20px;
+
+}
+.goodsBox ul li h3{
+    font-size: 14px;
+    color: red;
+    position: absolute;
+    left: 77px;
+    bottom: 15px;
+}
+.goodsBox ul li h4{
+    font-size: 12px;
+    position: absolute;
+    left: 135px;
+    bottom: 15px;
+    color: #ccc;
+    text-decoration: line-through;
+}
+.goodsBox>span{
+    display: block;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    border: 3px solid #d6d6d6;
+    line-height: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: #d6d6d6;
+    position: absolute;
+    top:280px;
+    cursor: pointer;
+}
+.goodsBox span:nth-of-type(1){
+    left: 84px;
+}
+.goodsBox span:nth-of-type(2){
+    right: 84px;
+}
+
+
+
+
+/* connect */
+.connectBox{
+    height: 240px;
+    width: 100%;
+    background: #f9f9f9;
+    margin-top: 55px;
+    position: relative;
+}
+.connectBox .clientService{
+    width: 214px;
+    height: 240px;
+    position: absolute;
+    left: 355px;
+    margin-top: 50px;
+    text-align: center;
+}
+.connectBox .clientService i{
+    font-size: 40px!important;
+    
+}
+.connectBox .clientService h2{
+    font-size: 12px;
+    text-align: center;
+    height: 57px;
+    line-height: 57px;
+}
+.connectBox .clientService h3{
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+}
+.connectBox  .logo{
+    position: absolute;
+    left: 842px;
+}
+.connectBox  .logo img{
+    height: 108px;
+    margin-top: 60px;
+}
+
+
+
+
+.bottomBox{
+    height: 415px;
+    width: 100%;
+    background: #000;
+    position: relative;
+    padding-left: 260px;
+}
+.bottomBox ul{
+    float: left;
+    margin:60px 68px 0 0;
+}
+.bottomBox ul li{
+    height: 24px;
+    line-height: 24px;
+}
+.bottomBox ul li:nth-child(1){
+    font-size: 14px;
+    color: #767676;
+    margin-bottom: 16px;
+}
+.bottomBox ul li a{
+    font-size: 12px;
+    color: #767676;
+}
+
+.bottomBox img{
+    width: 96px;
+    height: 96px;
+    display: block;
+    margin-bottom: 10px;
+}
+.bottomBox .official{
+    position: absolute;
+    top: 60px;
+    left: 910px;
+}
+.bottomBox .wild{
+    position: absolute;
+    top: 60px;
+    left: 1045px;
+}
+.bottomBox  p{
+    font-size: 12px;
+    line-height: 18px;
+    height: 18px;
+    color: #767676;
+}
+.bottomBox  .weibo{
+    height: 40px;
+    width: 200px;
+    border: 1px solid #767676;
+    border-radius: 20px;
+    position: absolute;
+    left: 922px;
+    top: 220px;
+}
+.bottomBox  .weibo p{
+    line-height: 40px;
+    font-size: 12px;
+    text-align: center;
+    color: #767676;
+    height: 40px;
+}
+.bottomBox  h3{
+    font-size: 12px;
+    color: #767676;
+    position: absolute;
+    bottom: 80px;
+    border-top: 1px solid #767676;
+}
